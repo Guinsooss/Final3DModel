@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blender</title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+    <!-- Here is my navagation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="blender.html">Blender</a>
+        <a href="tiltbrush.html">Tiltbrush</a>
+        <a href="creating3d.html">Creating my 3d model</a>
+
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <div class="title">
+        <strong>Blender</strong>
+    </div>
+    <div class="container">
+
+        <div class="content">
+            Blender is a free to use open sourse 3D modeling computer graphics software that allows the user to create aminated films, video editing, art peices, 3D printed models, animated scenes, modeling and video games. Inside blender there is a range of tools the user can use, for example 3D Modeling, wrapping and unwrapping images, texturing, sculpting, animating, camera tracking, rendering, motion graphics and even has an intergrated game engine.<br> For my use of Blender I will be using 3D modeling to create a visual scene, beside this text is me trying out different tools inside blender.
+
+        </div>
+    </div>
+    <div class="slideshow">
+
+        <h2 class="slideshowtitle">
+            Testing Photos
+        </h2>
+        <!-- This is an image slideshow of me testing out the software blender -->
+        <img class="mySlides" src="testingphotos/testing1.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing2.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing%203.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing4.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing5.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing6.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing%207.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing8.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing9.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing10.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing11.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing12.png" style="width:100%" alt="This an image of me testing blender">
+        <img class="mySlides" src="testingphotos/testing13.png" style="width:100%" alt="This an image of me testing blender">
+
+
+
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

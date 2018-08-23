@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<!-- This website is created by Michael Bebelman and was created on the 20th of August,2018 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+    <!-- This is a navagation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="blender.html">Blender</a>
+        <a href="tiltbrush.html">Tiltbrush</a>
+        <a href="creating3d.html">Creating my 3d model</a>
+
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
+    <div class="title">
+        <strong> My 3D Object </strong>
+    </div>
+
+    <div class="home3dmodel">
+        <!-- This code is from Sketchfab to embed my model-->
+        <iframe width="840" height="580" src="https://sketchfab.com/models/c41d657879d449afb909009aca33b6f0/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+
+
+</body>
+
+</html>

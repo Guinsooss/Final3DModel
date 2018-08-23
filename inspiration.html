@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inspiration</title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+</head>
+
+<body>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="blender.html">Blender</a>
+        <a href="tiltbrush.html">Tiltbrush</a>
+        <a href="creating3d.html">Creating my 3d model</a>
+
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <div class="title">
+        <strong>Inspiration for my Model</strong>
+    </div>
+    <div class="container">
+        <!-- This is the content for my webpage -->
+        <div class="content">
+            For my object I decided to create a building, when I went to Greece in July 2018 I took inspiration from the Acropolis of Athens, this is where one of the most famous buildings in the world is, the Pantheon. The Pantheon was a temple built for the goddess Athena. This is where I got the idea for the wrap around stairs and the roof of the building as they fit in with my origional concept of a Greek-Italian/Roman Temple. <br> <br> While on this same holiday we also went to Venice in Italy where I also drew inspiration for my building. We visited San Marco Square which is home to the Church of St. Mark. Here was where I got the idea for the pillars of the building as pillars here looked similar to the ones on my design.
+
+        </div>
+    </div>
+    <div class="slideshow">
+
+        <h2 class="slideshowtitle">
+            Inspiration photos
+        </h2>
+        <!-- Here is an image slideshow of photos that I took that were inspirational -->
+        <img class="mySlides" src="inspiration/inspiration1.jpg" style="width:100%" alt="This an image of the Acropolis of Athens">
+        <img class="mySlides" src="inspiration/inspiration2.jpg" style="width:100%" alt="This an image of the Acropolis of Athens">
+        <img class="mySlides" src="inspiration/inspiration3.jpg" style="width:100%" alt="This an image of the Acropolis of Athens">
+        <img class="mySlides" src="inspiration/inspiration4.jpg" style="width:80%" alt="This an image of a pillar at the Saint Mark's Basilica in Venice">
+        <img class="mySlides" src="inspiration/inspiration5.jpg" style="width:80%" alt="This an image of a pillar at the Saint Mark's Basilica in Venice">
+        <img class="mySlides" src="inspiration/inspiration6.jpg" style="width:80%" alt="This an image of a pillar at the Saint Mark's Basilica in Venice">
+        <img class="mySlides" src="inspiration/inspiration7.jpg" style="width:80%" alt="This an image of a pillar at the Saint Mark's Basilica in Venice">
+
+
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>
